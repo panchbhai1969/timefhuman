@@ -52,8 +52,8 @@ def timefhuman(string, now=None, raw=None):
     >>> timefhuman('2 PM on 7/17 or 7/19', raw=True, now=now)
     [[7/17/2018 2 pm, 7/19/2018 2 pm]]
     """
-    if now is None:
-        now = datetime.datetime.now()
+    
+    now = datetime.datetime.now()
 
     tokens = timefhuman_tokens(string, now)
 
